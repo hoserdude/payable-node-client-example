@@ -1,16 +1,15 @@
-// in REPL run .load ./app.js
 require('dotenv').config()
 var request = require('request');
+require('request-debug')(request);
 
 var workerRequest = {display_name: "Testy Worker"};
 
-// Externalize your id and key!
 var baseRequest = request.defaults({
     json: true,
     auth: {
         user: process.env.PAYABLE_COMPANY_ID,
         pass: process.env.PAYABLE_API_KEY,
-        sendImmediately: false
+        sendImmediately: true
     }
 })
 

@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "request": "latest",
-    "dotenv": "latest"
+    "dotenv": "latest",
+    "request-debug": "latest"
   }
 }
